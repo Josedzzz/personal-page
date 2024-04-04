@@ -7,7 +7,11 @@ body {
 /*Header edition*/
 
 .header {
-    background-color: #141414;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(10px); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -274,4 +278,38 @@ body {
 
 .content-animation {
     animation: appear-left 0.7s ease-in-out;
+}
+
+/*Projects edition*/
+
+.projects {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-page {
+    width: 40%;
+    max-width: 750px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.projects-page .introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #141414;
+    background-color: #F5D547;
+    width: 80%;
+    padding: 0px 20px;
+    margin: 20px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.projects-page .introduction h3 {
+    margin: 5px 0px;
 }
