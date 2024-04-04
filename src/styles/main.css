@@ -216,3 +216,62 @@ body {
 .contact-me p {
     color: #f0f0f0;
 }
+
+/*Animation for scroll*/
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 20%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+@keyframes appear-right {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to {
+       opacity: 1;
+       transform: translateX(0); 
+    }
+}
+
+@keyframes appear-left {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    to {
+       opacity: 1;
+       transform: translateX(0); 
+    }
+}
+
+.presentation-work {
+    view-timeline-name: --content;
+    view-timeline-axis: block;
+
+    animation-timeline: --content;
+    animation-name: appear-right;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+
+.hello {
+    animation: show 0.7s ease-in-out;
+}
+
+.presentation {
+    animation: appear-right 0.7s ease-in-out;
+}
+
+.content-animation {
+    animation: appear-left 0.7s ease-in-out;
+}
