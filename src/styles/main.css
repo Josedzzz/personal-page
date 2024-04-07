@@ -375,3 +375,19 @@ body {
         width: 100%; 
     }
 }
+
+.animation-right {
+    animation: appear-right 0.7s ease-in-out;
+}
+
+.animation-left {
+    animation: appear-left 0.7s ease-in-out;;
+}
+
+.introduction {
+    animation: show 0.7s ease-in-out;
+}
+
+.works-title {
+    animation: show 0.7s ease-in-out;
+}
