@@ -391,3 +391,17 @@ body {
 .works-title {
     animation: show 0.7s ease-in-out;
 }
+
+@media screen and (max-width: 768px) {
+    .page {
+        width: 90%;
+    }
+
+    .projects-page {
+        width: 90%;
+    }
+
+    .project {
+        width: 100%;
+    }
+}

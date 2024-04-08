@@ -44,4 +44,5 @@ document.addEventListener('DOMContentLoaded', function() {
     links.forEach(link => {
         link.addEventListener("click", handleLinkClick);
     });
+    showForm('about-me');
 });
